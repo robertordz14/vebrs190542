@@ -1,0 +1,28 @@
+
+#verbs-container{
+    margin: 0 35%;
+}
+.verbs-answer{
+    display: block;
+}
+#next{
+    margin-top: 8rem;
+    cursor: pointer;
+    color: green;
+}
+.rigthAnsers, .rightAnswer:hover{
+    background-color: #6ab04c;
+    border-color: #6ab04c;
+    color: #fff;
+}
+.wrongAnsers, .wrongAnswer:hover{
+    background-color: #b33030;
+    border-color: #b33030;
+    color: #fff;
+}
+#showVerb{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(46, 46, 46);
+}
+
+
