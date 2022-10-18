@@ -2,8 +2,8 @@
 const showVerb = document.getElementById("showVerb");
 const showImage = document.getElementById("showImage");
 const showAudio = document.getElementById("showAudio");
-
 const next = document.getElementById("next");
+const repeatAudio = document.getElementById("repeatAudio");
 const verbsCounter = document.getElementById("verbs-counter");
 const allRightCounter = document.getElementById("all-right-answers");
 const allWrongCounter = document.getElementById("all-wrong-answers");
@@ -29,6 +29,7 @@ let rightAnswers;
 next.addEventListener("click", function () {
   ponerVerbo();
   next.style.display = "none";
+  repeatAudio.style.display="inline-block";
   // console.log('hola');
 });
 
@@ -141,3 +142,6 @@ function ponerVerbo() {
     verbsContainer.innerHTML = "";
   }
 }
+repeatAudio.addEventListener('click',()=>{
+  showAudio.play()
+});
